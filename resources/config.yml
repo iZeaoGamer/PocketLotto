@@ -1,5 +1,5 @@
 version: 1
-draw-timer-seconds: 3600
+draw-timer-seconds: 1800
 currency-name: Dollars
 ticket:
   price: 5
