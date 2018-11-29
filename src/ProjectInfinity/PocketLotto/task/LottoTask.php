@@ -31,53 +31,53 @@ class LottoTask extends Task {
             # It wasn't time to draw, figure out if it's time to send a message.
             if($diff->i === 45 && $diff->s === 0) {
                 # 45 Minutes remaining.
-                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."[PocketLotto] $remaining until draw! Current prize pool is ".
-                TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."§7[§6Lotto§7] §5$remaining §duntil draw! §aType: §b/lotto buy [amount] §cto buy tickets for the lotto game! §dCurrent prize pool: ".
+                TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
             }
             if($diff->i === 30 && $diff->s === 0) {
                 # 30 Minutes remaining.
-                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."[PocketLotto] $remaining until draw! Current prize pool is ".
-                    TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."§7[§6Lotto§7] §5$remaining §duntil draw! §aType: §b/lotto buy [amount] §cto buy tickets for the lotto game! §dCurrent prize pool: ".
+                TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
             }
             if($diff->i === 15 && $diff->s === 0) {
                 # 15 Minutes remaining.
-                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."[PocketLotto] $remaining until draw! Current prize pool is ".
-                    TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."§7[§6Lotto§7] §5$remaining §duntil draw! §aType: §b/lotto buy [amount] §cto buy tickets for the lotto game! §dCurrent prize pool: ".
+                TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
             }
             if($diff->i === 10 && $diff->s === 0) {
                 # 10 Minutes remaining.
-                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."[PocketLotto] $remaining until draw! Current prize pool is ".
-                    TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."§7[§6Lotto§7] §5$remaining §duntil draw! §aType: §b/lotto buy [amount] §cto buy tickets for the lotto game! §dCurrent prize pool: ".
+                TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
             }
             if($diff->i === 5 && $diff->s === 0) {
                 # 5 Minutes remaining.
-                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."[PocketLotto] $remaining until draw! Current prize pool is ".
-                    TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."§7[§6Lotto§7] §5$remaining §duntil draw! §aType: §b/lotto buy [amount] §cto buy tickets for the lotto game! §dCurrent prize pool: ".
+                TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
             }
             if($diff->i === 2 && $diff->s === 0) {
                 # 2 Minutes remaining.
-                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."[PocketLotto] $remaining until draw! Current prize pool is ".
-                    TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."§7[§6Lotto§7] §5$remaining §duntil draw! §aType: §b/lotto buy [amount] §cto buy tickets for the lotto game! §dCurrent prize pool: ".
+                TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
             }
             if($diff->i === 1 && $diff->s === 0) {
                 # 1 Minutes remaining.
-                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."[PocketLotto] $remaining until draw! Current prize pool is ".
-                    TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."§7[§6Lotto§7] §5$remaining §duntil draw! §aType: §b/lotto buy [amount] §cto buy tickets for the lotto game! §dCurrent prize pool: ".
+                TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
             }
             if($diff->i === 0 && $diff->s === 30) {
                 # 30 seconds remaining.
-                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."[PocketLotto] $remaining until draw! Current prize pool is ".
-                    TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."§7[§6Lotto§7] §5$remaining §duntil draw! §aType: §b/lotto buy [amount] §cto buy tickets for the lotto game! §dCurrent prize pool: ".
+                TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
             }
             if($diff->i === 0 && $diff->s === 10) {
                 # 10 seconds remaining.
-                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."[PocketLotto] $remaining until draw! Current prize pool is ".
-                    TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."§7[§6Lotto§7] §5$remaining §duntil draw! §aType: §b/lotto buy [amount] §cto buy tickets for the lotto game! §dCurrent prize pool: ".
+                TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
             }
             if($diff->i === 0 && $diff->s <= 5) {
                 # Less than 5 seconds remaining.
-                $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."[PocketLotto] $remaining until draw! Current prize pool is ".
-                    TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+$this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW."§7[§6Lotto§7] §5$remaining §duntil draw! §aType: §b/lotto buy [amount] §cto buy tickets for the lotto game! §dCurrent prize pool: ".
+                TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
             }
         }
     }
@@ -88,7 +88,7 @@ class LottoTask extends Task {
     private function draw() {
         if($this->lm->countPlayers() < ConfigManager::getMinimumPlayers()) {
             $this->lm->refundAll();
-            $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW.'[PocketLotto] There was not enough players participating. Tickets have been refunded.');
+            $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW.'§7[§6Lotto§7] §cThere was not enough players participating. Tickets have been refunded.');
             $this->lm->setNextDraw();
             return;
         }
@@ -101,13 +101,13 @@ class LottoTask extends Task {
         shuffle($tickets);
         $player = $tickets[array_rand($tickets)];
 
-        $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW.'[PocketLotto] '.
-            TextFormat::GREEN.$player.TextFormat::YELLOW.' won '.TextFormat::GREEN.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
+        $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW.'§7[§6Lotto§7] '.
+            TextFormat::DARK_PURPLE.$player.TextFormat::YELLOW.' §dwon '.TextFormat::DARK_PURPLE.$this->lm->getPrizePool().' '.ConfigManager::getCurrencyName());
 
         $this->lm->getMoneyManager()->give($player, $this->lm->getPrizePool());
 
         # Finished drawing, now it's time to renew.
         $this->lm->setNextDraw();
-        $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW.'[PocketLotto] Next draw in '.trim($this->lm->getTimeRemaining()).'.');
+        $this->plugin->getServer()->broadcastMessage(TextFormat::YELLOW.'§7[§6Lotto§7] §bNext draw in §3'.trim($this->lm->getTimeRemaining()).'.');
     }
 }
