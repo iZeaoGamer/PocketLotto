@@ -18,12 +18,12 @@ class LottoCommand extends Command {
 
     public function execute(CommandSender $sender, string $commandLabel, array $args) {
         if(!$sender->hasPermission('pocketlotto.user')) {
-            $sender->sendMessage(TextFormat::RED.'[PocketLotto] You do not have permission to purchase tickets.');
+            $sender->sendMessage(TextFormat::RED.'§7[§6Lotto§7] §cYou do not have permission to purchase tickets.');
             return true;
         }
 
         if(count($args) < 1) {
-            $sender->sendMessage(TextFormat::RED.'Incorrect usage. Try /lotto buy <amount>');
+            $sender->sendMessage(TextFormat::RED.'Incorrect usage. §aTry §b/lotto buy <amount>');
             return true;
         }
 
@@ -31,30 +31,30 @@ class LottoCommand extends Command {
 
             case 'BUY':
                 if(!$sender->hasPermission('pocketlotto.user')) {
-                    $sender->sendMessage(TextFormat::RED.'[PocketLotto] You do not have permission to buy tickets.');
+                    $sender->sendMessage(TextFormat::RED.'§7[§6Lotto§7] §cYou do not have permission to buy tickets.');
                     return true;
                 }
                 $amount = 1;
                 if(count($args) > 1 && is_numeric($args[1])) $amount = (int) $args[1];
                 if(!$this->lm->canAcquireMore($sender->getName())) {
-                    $sender->sendMessage(TextFormat::RED.'[PocketLotto] You cannot purchase more tickets. Please wait for a draw.');
+                    $sender->sendMessage(TextFormat::RED.'§7[§6Lotto§7] §cYou cannot purchase more tickets. Please wait for a draw.');
                     return true;
                 }
                 $purchased = $this->lm->addTicket($sender->getName(), $amount);
                 if($purchased === 0) {
-                    $sender->sendMessage(TextFormat::RED.'[PocketLotto] You can not afford more or you already have the maximum amount of tickets allowed.');
+                    $sender->sendMessage(TextFormat::RED.'§7[§6Lotto§7] §cYou can not afford more or you already have the maximum amount of tickets allowed.');
                     return true;
                 }
-                $sender->sendMessage(TextFormat::GREEN.'[PocketLotto] Purchased '.$purchased.' ticket(s).');
+                $sender->sendMessage(TextFormat::GREEN.'§7[§6Lotto§7] §dPurchased §5'.$purchased.' §dticket(s).');
                 break;
 
             case 'TIME':
             case 'DRAW':
-                $sender->sendMessage(TextFormat::YELLOW.'[PocketLotto] '.$this->lm->getTimeRemaining());
+                $sender->sendMessage(TextFormat::YELLOW.'§7[§6Lotto§7] §3'.$this->lm->getTimeRemaining());
                 break;
 
             default:
-                $sender->sendMessage(TextFormat::RED.'[PocketLotto] Invalid option. Valid options are: buy, time/draw');
+                $sender->sendMessage(TextFormat::RED.'§7[§6Lotto§7] §cInvalid option. §aValid options are: §bbuy, time/draw');
         }
 
         return true;
