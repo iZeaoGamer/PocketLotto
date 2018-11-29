@@ -46,6 +46,7 @@ class LottoCommand extends Command {
                     return true;
                 }
                 $sender->sendMessage(TextFormat::GREEN.'§7[§6Lotto§7] §dPurchased §5'.$purchased.' §dticket(s).');
+                PocketLotto::getPlugin()->getServer()->broadcastMessage(TextFormat::DARK_PURPLE . $sender->getName() . " §dbought themselfs§5 $purchased §dticket(s). §bTime until draw: §3" . $this->lm->getTimeRemaining());
                 break;
 
             case 'TIME':
